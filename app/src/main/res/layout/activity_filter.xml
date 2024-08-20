@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- CheckBoxes for food categories -->
+    <CheckBox
+        android:id="@+id/checkBox_all"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All" />
+
+    <CheckBox
+        android:id="@+id/checkBox_category1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Burger" />
+
+    <CheckBox
+        android:id="@+id/checkBox_category2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seafood" />
+
+    <CheckBox
+        android:id="@+id/checkBox_category3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bakery" />
+
+    <CheckBox
+        android:id="@+id/checkBox_category4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pizza" />
+
+
+    <!-- ... Add more categories as needed ... -->
+
+    <!-- SeekBar and TextView for price -->
+    <TextView
+        android:id="@+id/textView_maxPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Max Price: $100" />
+
+    <SeekBar
+        android:id="@+id/seekBar_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="100" />
+
+    <!-- Filter Button -->
+    <Button
+        android:id="@+id/button_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apply Filter"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

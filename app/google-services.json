@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "520828743583",
+    "project_id": "greenmysterybox",
+    "storage_bucket": "greenmysterybox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520828743583:android:920f444d79915ce18657aa",
+        "android_client_info": {
+          "package_name": "comp5216.sydney.edu.au.greenmysterybox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520828743583-ldrkjs415jmord7fh3qrtiivp02md94e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY5MGH2xg2ZXyGm1542llL4JGb7OAM58M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520828743583-ldrkjs415jmord7fh3qrtiivp02md94e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

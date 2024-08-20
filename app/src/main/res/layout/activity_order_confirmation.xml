@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/topLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_back_button"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/offerRestaurantName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Restaurant Name"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"/>
+
+        <TextView
+            android:id="@+id/offerDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0 km"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/offerImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/topLinearLayout"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/offerTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerImageView"
+        android:paddingTop="20dp"
+        android:paddingLeft="30dp"
+        android:text="Food Offer Title"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/offerContents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerTitleTextView"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:text="Contents: item1, item2, item3" />
+
+    <TextView
+        android:id="@+id/offerPickupTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerContents"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:text="13:00-14:00"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/offerPickupAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerPickupTime"
+        android:paddingTop="10dp"
+        android:paddingLeft="30dp"
+        android:text=""
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/priceLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/offerPickupAddress"
+        android:layout_marginTop="64dp"
+        android:paddingLeft="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/offerCurrentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/offerOriginalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="$0.00"
+            android:textSize="20sp"/>
+
+        <comp5216.sydney.edu.au.greenmysterybox.HorizontalNumberPicker
+            android:id="@+id/numberPicker"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/priceLinearLayout"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="Place Order  $0.00"
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+</RelativeLayout>
