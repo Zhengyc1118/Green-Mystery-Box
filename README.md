@@ -1,6 +1,5 @@
 # Green Mystery Box
 
-## Description
 The application aims to bridge the gap between restaurants and cafes which have food
 surplus and struggle with food waste, and customers seeking discounted meals.
 
